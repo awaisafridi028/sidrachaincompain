@@ -1,0 +1,214 @@
+/* Dark Theme Background */
+body.dark-theme {
+    background-color: #121212;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container for the Login Box */
+.container, .login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background: #1c1c1c;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.3);
+}
+
+/* Page Titles */
+.title {
+    font-size: 24px;
+    color: #ff8800;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #bbb;
+}
+
+.welcome {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+/* KYC Button */
+.kyc-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ff8800;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.kyc-btn img {
+    width: 20px;
+    height: auto;
+    margin-right: 8px;
+}
+
+/* Terms Text */
+.terms {
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 15px;
+}
+
+.terms a {
+    color: #ff8800;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+/* Back Button */
+.back-btn {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #ff8800;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.back-btn:hover {
+    text-decoration: underline;
+}
+
+/* KYC Logo */
+.kyc-logo {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* Form Styling */
+form {
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    color: #ccc;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background: #222;
+    color: #fff;
+}
+
+/* Captcha Box */
+.captcha-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.captcha-box input {
+    margin-right: 8px;
+}
+
+/* Login Button */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background: #ff8800;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background: #e57c00;
+}
+
+/* Other Sign-in Buttons */
+.google-btn, .microsoft-btn, .email-btn, .apple-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.google-btn { background: #fff; color: black; }
+.microsoft-btn { background: #2d89ef; color: white; }
+.email-btn { background: #444; color: white; }
+.apple-btn { background: black; color: white; }
+
+/* Register Link */
+.register-link {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.register-link a {
+    color: #ff8800;
+    text-decoration: none;
+}
+/* Error Page Styling */
+.error-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8d7da; /* Light red background */
+    color: #721c24; /* Dark red text */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+.error-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.error-container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.error-container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.error-container button {
+    background: #dc3545; /* Red button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.error-container button:hover {
+    background: #c82333;
+}
