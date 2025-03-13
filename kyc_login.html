@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to KYCPORT</title>
+    <link rel="stylesheet" href="kyc_login.css">
+</head>
+<body class="light-theme">
+
+    <div class="login-container">
+        <div class="logo">
+            <img src="images/kycport_logo.png" alt="KYC Port Logo">
+        </div>
+
+        <div class="login-box">
+            <h2>Login</h2>
+            <form>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+
+                <!-- Button to trigger redirection using JavaScript -->
+                <button type="button" class="login-btn" onclick="window.location.href='error.html'">Login</button>
+
+                <div class="captcha-box">
+                    <div class="captcha-left">
+                        <!-- Captcha loading spinner will be inserted here -->
+                    </div>
+                    <div class="captcha-right">
+                        <img src="images/cloudflare-logo.png" alt="Cloudflare">
+                        <div class="captcha-links">
+                            <a href="#">Privacy</a> • <a href="#">Terms</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <button class="google-btn">Sign in with Google</button>
+            <button class="microsoft-btn">Sign in with Microsoft</button>
+            <button class="email-btn">Sign in with Email</button>
+            <button class="apple-btn">Sign in with Apple</button>
+
+            <p class="register-link">Don't have an account? <a href="register.html">Register</a></p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let captchaContainer = document.querySelector(".captcha-left");
+            let spinner = document.createElement("div");
+            spinner.classList.add("captcha-loading");
+
+            // Show spinner first
+            captchaContainer.innerHTML = "";
+            captchaContainer.appendChild(spinner);
+
+            // Simulate captcha verification (3.5 seconds delay)
+            setTimeout(() => {
+                captchaContainer.innerHTML = `
+                    <div style="display: flex; align-items: center; gap: 8px;">
+                        <div style="width: 20px; height: 20px; background: #4CAF50; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <span style="color: white; font-size: 14px;">✔</span>
+                        </div>
+                        <p>Success!</p>
+                    </div>
+                `;
+            }, 3500);
+        });
+    </script>
+
+</body>
+</html>
